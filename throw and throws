@@ -1,0 +1,27 @@
+public class Exception3
+{
+
+	public static void main(String[] args)
+	{
+		// TODO Auto-generated method stub
+		try
+		{
+			Exception3 met=new Exception3();
+			System.out.println("length of JUNK is" +met.getStringSize("JUNK"));
+			System.out.println("length of WRONG is" +met.getStringSize("WRONG"));
+			System.out.println("length of null string is" +met.getStringSize(null));
+		}
+		catch(Exception ex)
+		{
+			System.out.println("Exceptionmessage:"+ex.getMessage());
+		}
+	}
+
+	private int getStringSize(String s)throws Exception
+	{
+		if(s==null)
+			throw new Exception("Null is passed");
+		return (s.length());
+	}
+
+}
