@@ -1,0 +1,24 @@
+class MyThread implements Runnable
+{
+	Thread t;
+	String s=null;
+	MyThread(String s1)
+	{
+		s=s1;
+		t=new Thread(this); //use of this->Whatever the thread is coming it have to be executed. 
+		t.start(); //to execute function run as thread
+
+	}
+	public void run()
+	{
+		System.out.println(s);
+	}
+}
+public class RunThread {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		MyThread m1=new MyThread("Thread Started");
+	}
+
+}
