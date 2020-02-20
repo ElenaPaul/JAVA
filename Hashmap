@@ -1,0 +1,27 @@
+import java.util.*;
+public class Hashmap {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		HashMap hm=new HashMap();
+		hm.put("oop","object oriented programming");
+		hm.put("object", "has state and behavior");
+		hm.put("class","defines state and behavior");
+		System.out.println(hm);
+
+		Set s=hm.entrySet();
+
+		System.out.println();
+		System.out.println("hashmap current size:"+hm.size());
+		System.out.println("elements of hashmap");
+		System.out.println();
+
+		Iterator itr=s.iterator();
+
+		while(itr.hasNext())
+		{
+			Object ob=itr.next();
+			System.out.println(""+ob);
+		}
+	}
+}
