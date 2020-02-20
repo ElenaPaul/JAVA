@@ -1,0 +1,39 @@
+package elite;
+
+public class elite1 
+{
+public void display()
+{
+	System.out.println("Welcome to Package");
+}
+}
+
+-----------------------------
+package elite;
+import sop.*;
+class hello1 
+{
+public static void main(String arg[])
+{
+	elite1 e1=new elite1();
+	e1.display();
+	
+	S.op(2);
+	S.op(5,5);
+	
+}
+}
+-----------------------------
+package sop;
+
+public class S 
+{
+public static void op(int a,int b)
+{
+	System.out.println(a+b);
+}
+public static void op(int a)
+{
+	System.out.println(a);
+}
+}
