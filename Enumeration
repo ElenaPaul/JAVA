@@ -1,0 +1,32 @@
+import java.util.*;
+public class stack {
+
+	public static void main(String[] args) 
+	{
+		Stack s=new Stack();
+
+		s.push("Patrick");
+		s.push("eli");
+		s.push("francis");
+		s.push("akhil");
+		s.push("susan");
+
+		System.out.println("Stack ELEMENTS"+s);
+		System.out.println("First ELEMENTS"+s.peek());
+		System.out.println("Stack ELEMENTS"+s);
+		System.out.println("Popping out "+s.pop());
+		System.out.println("Stack ELEMENTS"+s);
+		s.push("java");
+		System.out.println("after adding"+s);
+		System.out.println("Popping out"+s.pop());
+		System.out.println("Stack ELEMENTS"+s);
+		System.out.println("first ELEMENTS"+s.peek());
+
+		Enumeration e=s.elements();
+		System.out.println("ELEMENTS are");
+		while(e.hasMoreElements())
+		{
+			System.out.println(e.nextElement());
+		}
+	}
+}
