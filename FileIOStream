@@ -1,0 +1,22 @@
+import java.io.*;
+public class samp 
+{
+
+1	public static void main(String[] args) throws Exception
+	{
+		// TODO Auto-generated method stub
+		String s="str.java";
+		String s1="str1.java";
+		int i;
+		FileInputStream fis=new FileInputStream(s1);
+		FileOutputStream fos=new FileOutputStream(s,false);
+		fis.skip(3); //3 characters get skipped from str.java
+		while((i=fis.read())!=-1)
+		{
+			fos.flush(); //cleaning the buffer area
+			fos.write(i);
+		}  //the contents we written on str1.java gets copied to str.java
+		fos.close();
+		fis.close();
+	}
+}
