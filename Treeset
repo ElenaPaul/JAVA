@@ -1,0 +1,17 @@
+import java.util.*;
+class set {
+
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+		TreeSet hs=new TreeSet();
+		hs.add("Elena");
+		hs.add("Henna");
+		hs.add("Alphons");
+		hs.add("Agna");
+		hs.add("Elena");
+		hs.add("Alan");
+
+		System.out.println(hs);
+	}
+}
