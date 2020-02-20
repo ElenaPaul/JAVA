@@ -1,0 +1,18 @@
+import java.util.*;
+public class set {
+
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+		Set hs=new HashSet();
+		hs.add("Elena");
+		hs.add("Henna");
+		hs.add("Alphons");
+		hs.add("Agna");
+		hs.add("Elena");
+		hs.add("Alan");
+		hs.add(null);
+		hs.add(null);
+		System.out.println(hs);
+	}
+}
